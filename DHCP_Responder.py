@@ -73,9 +73,6 @@ class DHCPResponder(Responder):
 #      return[self.build_operation('AddTagToArtifact',tag='Elastic:DHCP')]
       return[self.build_operation('AddTagToCase',tag='Elastic:DHCP-enriched')]
 
-#----NOT WORKINNG YET--------------------------------------------
-#    return[self.build_operation('AddCustomField', name='testName',value='testValue...')]
-
 
 if __name__=='__main__':
   DHCPResponder().run()

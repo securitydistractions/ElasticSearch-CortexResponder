@@ -2,7 +2,7 @@
 
 This is my attempt at enriching events in TheHive, with information from ElasticSearch.
 
-### Short intro
+## Short intro
 
 This responder was made with the purpose of helping correlate ip-addresses with hostnames in a large infrastructure, using dynamic DHCP.
 

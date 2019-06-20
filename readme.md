@@ -2,14 +2,14 @@
 
 This is my attempt at enriching events in TheHive, with information from ElasticSearch.
 
-## Short intro
+### Short intro
 
 This responder was made with the purpose of helping correlate ip-addresses with hostnames in a large infrastructure, using dynamic DHCP.
 
 Besides being able to fetch the relevant log-entries form our DHCP-logs in Elastic, This responder is also able to perform automatic enrichment of the event, Meaning, that the responder can create new observables, containing relevant info in the message-field.
 
 
-###Prerequisites
+### Prerequisites
 
 When implementing this responder the following should be implemented in TheHive:
     Datatype: hostname      (fqdn could be used instead as it already exist in TheHive, but this would require a few small changes to the responder)

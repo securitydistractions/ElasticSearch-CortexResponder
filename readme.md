@@ -13,7 +13,7 @@ Besides being able to fetch the relevant log-entries form our DHCP-logs in Elast
 
 When implementing this responder the following should be implemented in TheHive:
 
-    Datatype: hostname      (fqdn could be used instead as it already exist in TheHive, but this would require a few small changes to the                                responder)
+    Datatype: hostname      (fqdn could be used instead as it already exist in TheHive, but this would require a few small changes to the responder)
     
     CustomField: customer   (used to define which ElasticSearch-index should be searched.)
     

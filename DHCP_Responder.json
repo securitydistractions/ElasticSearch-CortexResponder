@@ -1,0 +1,63 @@
+{
+  "name": "Dhcp-Responder",
+  "version": "0.5",
+  "author": "DLC",
+  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "license": "AGPL-V3",
+  "description": "Retrieve info on DHCP (Find Hostname from Ip-address)/(Find Ip-address from Hostname)",
+  "dataTypeList": ["thehive:case_artifact"],
+  "command": "ElasticSearch/DHCP_Responder.py",
+  "baseConfig": "Dhcp_Responder",
+  "configurationItems": [
+    {
+      "name": "ES_api_url1",
+      "description": "URL1 for ElasticSearch",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "ES_api_url2",
+      "description": "URL2 for ElasticSearch",
+      "type": "string",
+      "multi": false,
+      "required": false
+    },
+    {
+      "name": "ES_api_username",
+      "description": "Username for ElasticSearch",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "ES_api_password",
+      "description": "Password for ElasticSearch",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "TheHive_api_url",
+      "description": "Url for TheHive",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "TheHive_api_password",
+      "description": "Password for TheHive",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "limit",
+      "description": "Define the maximum number of results per request",
+      "type": "number",
+      "multi": false,
+      "required": false,
+      "defaultValue":100
+    }
+  ]
+}

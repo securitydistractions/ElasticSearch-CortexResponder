@@ -1,0 +1,10 @@
+thehive4py
+cortexutils
+elasticsearch
+ssl
+objdict
+operator
+requests
+json
+ipaddress
+traceback

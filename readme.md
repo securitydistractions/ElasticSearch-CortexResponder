@@ -31,10 +31,15 @@ Furthermore your DHCP logs should adhere to the Elastic-Common-Schema.
 ### Use-Case
 
 This Responder works on case-artifacts and supports the following datatypes:
+
     Ip-address (must be rfc1918 (LAN) compliant)
+    
     FQDN
+    
     hostname
+    
     other(if using other, it is assumed that the observable is a hostname)
+    
 
 The analyst starts by adding the required customFields(Customer, startTime, endTime, autoDHCPEnrichment)
 
